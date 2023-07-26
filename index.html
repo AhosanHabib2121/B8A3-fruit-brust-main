@@ -40,7 +40,7 @@
               'custom-bg-color': '#F85559',
             },
             backgroundImage: {
-              'hero-banner-photo': "url('./images/banner.png')",
+              'hero-team-photo': "url('./images/team.png')",
             },
           },
         },
@@ -49,7 +49,7 @@
   </head>
   <body>
     <!-- header section here -->
-    <header class="container mx-auto px-5 mt-8">
+    <header class="container mx-auto px-5 md:px-12 mt-8">
       <!-- nav section here -->
       <nav>
         <!-------- large and medium device ------------>
@@ -156,10 +156,217 @@
           </div>
         </div>
       </nav>
-      <!-- banner -->
+      <!-- banner section here -->
+      <!-- <section class=""> -->
+      <!-- carousel area -->
+      <div class="carousel">
+        <!-- slide1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="relative">
+            <img src="./images/banner1.png" class="" />
+          </div>
+          <div
+            class="absolute max-w-xl top-5 right-14 md:right-0 px-2 md:px-0 space-y-2 md:space-y-4 md:max-w-xl md:top-24 md:left-24 lg:max-w-2xl lg:top-36 lg:left-64"
+          >
+            <h3
+              class="lato-font text-xl font-extrabold md:text-4xl lg:text-7xl text-white text-center"
+            >
+              Exotic tastes at your doorstep
+            </h3>
+            <p
+              class="lato-font text-sm lg:text-xl md:text-sm md:font-medium text-white text-center"
+            >
+              We supply highly quality organic products
+            </p>
+            <div class="grid justify-center">
+              <button
+                class="btn bg-custom-bg-color text-white border-0 hover:bg-red-500 block"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slide2 -->
+        <div id="slide2" class="carousel-item justify-end relative w-full">
+          <div class="relative">
+            <img src="./images/banner2.png" class="" />
+          </div>
+          <div
+            class="absolute max-w-xl top-5 right-14 md:right-0 px-2 md:px-0 space-y-2 md:space-y-4 md:max-w-xl md:top-24 md:left-24 lg:max-w-2xl lg:top-36 lg:left-64"
+          >
+            <h3
+              class="lato-font text-xl font-extrabold md:text-4xl lg:text-7xl text-white text-center"
+            >
+              Exotic tastes at your doorstep
+            </h3>
+            <p
+              class="lato-font text-sm lg:text-xl md:text-sm md:font-medium text-white text-center"
+            >
+              We supply highly quality organic products
+            </p>
+            <div class="grid justify-center">
+              <button
+                class="btn bg-custom-bg-color text-white border-0 hover:bg-red-500 block"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slide3 -->
+        <div id="slide3" class="carousel-item justify-end relative w-full">
+          <div class="relative">
+            <img src="./images/banner3.png" class="" />
+          </div>
+          <div
+            class="absolute max-w-xl top-5 right-14 md:right-0 px-2 md:px-0 space-y-2 md:space-y-4 md:max-w-xl md:top-24 md:left-24 lg:max-w-2xl lg:top-36 lg:left-64"
+          >
+            <h3
+              class="lato-font text-xl font-extrabold md:text-4xl lg:text-7xl text-white text-center"
+            >
+              Exotic tastes at your doorstep
+            </h3>
+            <p
+              class="lato-font text-sm lg:text-xl md:text-sm md:font-medium text-white text-center"
+            >
+              We supply highly quality organic products
+            </p>
+            <div class="grid justify-center">
+              <button
+                class="btn bg-custom-bg-color text-white border-0 hover:bg-red-500 block"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- </section> -->
     </header>
     <!-- main section here -->
-    <main class="container mx-auto px-5"></main>
+    <main class="container mx-auto px-5 md:px-12">
+      <!-- deal section here -->
+      <section></section>
+      <!-- team section here -->
+      <section class="mt-20">
+        <div class="hero min-h-screen bg-hero-team-photo">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-2xl md:max-w-4xl">
+              <!-- head content -->
+              <div>
+                <h1 class="mb-5 lato-font text-3xl md:text-5xl font-extrabold">
+                  Meet the team section
+                </h1>
+                <p class="lato-font">
+                  Contrary to popular belief, is not simply random text. It has
+                  roots in a piece of classical Latin literature from 45 BC,
+                  making it over 2000 years old.
+                </p>
+              </div>
+              <!-- body content -->
+              <div class="grid grid-cols-1 md:grid-cols-4">
+                <!-- card-item-1 -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <img
+                      src="./images/member1.png"
+                      alt="not found"
+                      class="rounded-full"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center lato-font space-y-1">
+                    <h2 class="card-title text-1xl font-bold ">Awlad Hossain</h2>
+                    <h4 class="card-title text-base font-medium">Fruits Expert</h4>
+                    <div class="card-actions">
+                      <i class="fa-brands fa-facebook-f bg-custom-bg-color p-1 rounded-3xl"></i>
+                      <i class="fa-brands fa-twitter bg-custom-bg-color p-1 rounded-3xl"></i>
+                      <i class="fa-brands fa-instagram bg-custom-bg-color p-1 rounded-3xl"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- card-item-2 -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <img
+                      src="./images/member2.png"
+                      alt="not found"
+                      class="rounded-full"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center lato-font space-y-1">
+                    <h2 class="card-title text-1xl font-bold ">Safia Chowdhury</h2>
+                    <h4 class="card-title text-base font-medium">Fruits Expert</h4>
+                    <div class="card-actions">
+                      <i class="fa-brands fa-facebook-f bg-custom-bg-color p-1 rounded-3xl"></i>
+                      <i class="fa-brands fa-twitter bg-custom-bg-color p-1 rounded-3xl"></i>
+                      <i class="fa-brands fa-instagram bg-custom-bg-color p-1 rounded-3xl"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- card-item-3 -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <img
+                      src="./images/member3.png"
+                      alt="not found"
+                      class="rounded-full"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center lato-font space-y-1">
+                    <h2 class="card-title text-1xl font-bold ">Rokib Hossain</h2>
+                    <h4 class="card-title text-base font-medium">Fruits Expert</h4>
+                    <div class="card-actions">
+                      <i class="fa-brands fa-facebook-f bg-custom-bg-color p-1 rounded-3xl"></i>
+                      <i class="fa-brands fa-twitter bg-custom-bg-color p-1 rounded-3xl"></i>
+                      <i class="fa-brands fa-instagram bg-custom-bg-color p-1 rounded-3xl"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- card-item-4 -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <img
+                      src="./images/member4.png"
+                      alt="not found"
+                      class="rounded-full"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center lato-font space-y-1">
+                    <h2 class="card-title text-1xl font-bold ">Chaity</h2>
+                    <h4 class="card-title text-base font-medium">Fruits Expert</h4>
+                    <div class="card-actions">
+                      <i class="fa-brands fa-facebook-f bg-custom-bg-color p-1 rounded-3xl"></i>
+                      <i class="fa-brands fa-twitter bg-custom-bg-color p-1 rounded-3xl"></i>
+                      <i class="fa-brands fa-instagram bg-custom-bg-color p-1 rounded-3xl"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer section here -->
     <footer></footer>
   </body>
