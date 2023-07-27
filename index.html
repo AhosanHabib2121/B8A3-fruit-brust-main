@@ -59,43 +59,30 @@
           class="navbar invisible md:visible bg-custom-bg-color md:px-5 md:py-4 rounded-full"
         >
           <div class="navbar-start">
-            <div class="lg:flex">
+            <div class="lg:flex md:flex justify-start">
               <ul
-                class="menu menu-horizontal px-1 lato-font text-base font-medium text-white"
+                class="menu menu-horizontal px-1 lato-font text-base font-medium text-white md:hidden lg:block lg:flex"
               >
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
                 <li><a>All Fruits</a></li>
               </ul>
-            </div>
-            <!-- <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                 <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul
+                  tabindex="0"
+                  class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 lato-font text-base font-medium"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 lato-font text-base font-medium"
-              >
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
-            </div> -->
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
           <!-- logo area -->
           <a
@@ -118,7 +105,7 @@
           </div>
         </div>
         <!-----mobile device ----------->
-        <div class="visible md:invisible navbar -mt-52 md:-mt-0">
+        <div class="visible md:invisible navbar -mt-60 md:-mt-0">
           <!-- logo area -->
           <a
             href=""
@@ -130,19 +117,7 @@
           <div class="navbar-end">
             <div class="dropdown dropdown-end">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
+                  <i class="fa-solid fa-bars"></i>
                 </svg>
               </label>
               <ul
@@ -161,7 +136,7 @@
       <!-- banner section here -->
       <!-- <section class=""> -->
       <!-- carousel area -->
-      <div class="carousel">
+      <div class="carousel mt-6 md:mt-0">
         <!-- slide1 -->
         <div id="slide1" class="carousel-item relative w-full">
           <div class="relative">
@@ -263,31 +238,86 @@
         </div>
       </div>
       <!--fruit-feature section -->
-      <section>
-
+      <section
+        class="grid grid-cols-5 mx-24 lg:mb-28 rounded-lg relative -mt-16 bg-white p-6 invisible lg:visible"
+      >
+        <div class="flex justify-center items-center">
+          <div class="space-y-3">
+            <img src="./images/fruit1.png" class="w-28" alt="not found" />
+            <h4
+              class="lato-font text-base font-medium text-small-text-color text-center"
+            >
+              Grapes
+            </h4>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="space-y-2">
+            <img src="./images/fruit2.png" class="w-24" alt="not found" />
+            <h4
+              class="lato-font text-base font-medium text-small-text-color text-center"
+            >
+              Orange
+            </h4>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="space-y-5">
+            <img src="./images/fruit3.png" class="w-28" alt="not found" />
+            <h4
+              class="lato-font text-base font-medium text-small-text-color text-center"
+            >
+              Mango
+            </h4>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="space-y-4">
+            <img src="./images/fruit4.png" class="w-28" alt="not found" />
+            <h4
+              class="lato-font text-base font-medium text-small-text-color text-center"
+            >
+              Strawberry
+            </h4>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="space-y-4">
+            <img src="./images/fruit5.png" class="w-28" alt="not found" />
+            <h4
+              class="lato-font text-base font-medium text-small-text-color text-center"
+            >
+              Anner
+            </h4>
+          </div>
+        </div>
       </section>
       <!-- </section> -->
     </header>
     <!-- main section here -->
     <main class="container mx-auto px-5 md:px-12">
       <!-- deal section here -->
-      <section class="mt-20">
+      <section class="lg:mt-20">
         <!-- content and time area -->
         <div
           class="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-between mb-11"
         >
           <div class="max-w-xl space-y-3">
-            <h2 class="text-5xl font-extrabold lato-font text-text-bg-color">
+            <h2
+              class="text-5xl font-extrabold lato-font text-text-bg-color text-center lg:text-left"
+            >
               Deal of the day
             </h2>
-            <p class="lato-font text-base font-medium text-small-text-color">
+            <p
+              class="lato-font text-base font-medium text-small-text-color text-center lg:text-left"
+            >
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
               it over 2000 years old.
             </p>
           </div>
           <div class="">
-            <div class="flex gap-5">
+            <div class="flex gap-5 justify-center lg:justify-start">
               <div>
                 <span
                   class="countdown text-5xl font-extrabold lato-font text-text-bg-color"
@@ -1290,9 +1320,15 @@
                 <i class="fa-solid fa-users bg-slate-200 rounded-full p-2"></i>
               </div>
               <div class="ml-6">
-                <h4 class="text-2xl font-extrabold lato-font text-text-bg-color ">Dedicated Team</h4>
+                <h4
+                  class="text-2xl font-extrabold lato-font text-text-bg-color"
+                >
+                  Dedicated Team
+                </h4>
                 <div class="w-28 mt-3 mb-2 border bg-slate-400"></div>
-                <p class="lato-font text-base font-medium text-small-text-color">
+                <p
+                  class="lato-font text-base font-medium text-small-text-color"
+                >
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -1301,12 +1337,20 @@
             <!-- item2 -->
             <div class="flex items-center">
               <div>
-                <i class="fa-regular fa-heart bg-slate-200 rounded-full p-2"></i>
+                <i
+                  class="fa-regular fa-heart bg-slate-200 rounded-full p-2"
+                ></i>
               </div>
-              <div class="ml-6 ">
-                <h4 class="text-2xl font-extrabold lato-font text-text-bg-color ">Fresh is Best</h4>
+              <div class="ml-6">
+                <h4
+                  class="text-2xl font-extrabold lato-font text-text-bg-color"
+                >
+                  Fresh is Best
+                </h4>
                 <div class="w-28 mt-3 mb-2 border bg-slate-400"></div>
-                <p class="lato-font text-base font-medium text-small-text-color">
+                <p
+                  class="lato-font text-base font-medium text-small-text-color"
+                >
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -1318,9 +1362,15 @@
                 <i class="fa-solid fa-gift bg-slate-200 rounded-full p-2"></i>
               </div>
               <div class="ml-6">
-                <h4 class="text-2xl font-extrabold lato-font text-text-bg-color ">Gift Certificates</h4>
+                <h4
+                  class="text-2xl font-extrabold lato-font text-text-bg-color"
+                >
+                  Gift Certificates
+                </h4>
                 <div class="w-28 mt-3 mb-2 border bg-slate-400"></div>
-                <p class="lato-font text-base font-medium text-small-text-color">
+                <p
+                  class="lato-font text-base font-medium text-small-text-color"
+                >
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -1328,20 +1378,28 @@
             </div>
           </div>
           <!-- image area -->
-          <div>
-            <img src="./images/whychoose1.png" alt="not found">
+          <div class="">
+            <img src="./images/whychoose1.png" alt="not found" />
           </div>
           <!-- content-two-area -->
           <div class="space-y-5">
             <!-- item1 -->
-            <div class="flex items-center ">
-              <div class="">
+            <div class="flex items-center">
+              <div class="flex">
                 <i class="fa-brands fa-apple bg-slate-200 rounded-full p-2"></i>
               </div>
               <div class="ml-6">
-                <h4 class="text-2xl font-extrabold lato-font text-text-bg-color ">Integrated Supplier</h4>
-                <div class="w-28 mt-3 mb-2 border bg-slate-400"></div>
-                <p class="lato-font text-base font-medium text-small-text-color">
+                <h4
+                  class="text-2xl font-extrabold lato-font text-text-bg-color"
+                >
+                  Integrated Supplier
+                </h4>
+                <div
+                  class="w-28 mt-3 mb-2 border bg-slate-400 text-right"
+                ></div>
+                <p
+                  class="lato-font text-base font-medium text-small-text-color"
+                >
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -1350,12 +1408,20 @@
             <!-- item2 -->
             <div class="flex items-center">
               <div>
-                <i class="fa-solid fa-ice-cream bg-slate-200 rounded-full p-2"></i>
+                <i
+                  class="fa-solid fa-ice-cream bg-slate-200 rounded-full p-2"
+                ></i>
               </div>
               <div class="ml-6">
-                <h4 class="text-2xl font-extrabold lato-font text-text-bg-color ">Sustainable Practice</h4>
+                <h4
+                  class="text-2xl font-extrabold lato-font text-text-bg-color"
+                >
+                  Sustainable Practice
+                </h4>
                 <div class="w-28 mt-3 mb-2 border bg-slate-400"></div>
-                <p class="lato-font text-base font-medium text-small-text-color">
+                <p
+                  class="lato-font text-base font-medium text-small-text-color"
+                >
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -1364,12 +1430,20 @@
             <!-- item3 -->
             <div class="flex items-center">
               <div>
-                <i class="fa-regular fa-thumbs-up bg-slate-200 rounded-full p-2"></i>
+                <i
+                  class="fa-regular fa-thumbs-up bg-slate-200 rounded-full p-2"
+                ></i>
               </div>
               <div class="ml-6">
-                <h4 class="text-2xl font-extrabold lato-font text-text-bg-color ">The Benefits Only</h4>
+                <h4
+                  class="text-2xl font-extrabold lato-font text-text-bg-color"
+                >
+                  The Benefits Only
+                </h4>
                 <div class="w-28 mt-3 mb-2 border bg-slate-400"></div>
-                <p class="lato-font text-base font-medium text-small-text-color">
+                <p
+                  class="lato-font text-base font-medium text-small-text-color"
+                >
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -1391,7 +1465,7 @@
           </a>
         </div>
         <div
-          class="grid grid-cols-4 justify-center md:grid-flow-col gap-4 lato-font text-xs md:text-lg font-semibold"
+          class="grid grid-cols-4 md:grid-flow-col gap-4 lato-font text-xs md:text-lg font-semibold"
         >
           <a class="link link-hover">Home</a>
           <a class="link link-hover">About us</a>
